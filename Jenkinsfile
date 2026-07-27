@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh '''
           echo "###########날짜 태그 생성##############"
-          IMAGE_TAG=$(TZ=Aisa/Seoul date _%m%d)
+          IMAGE_TAG=$(TZ=Aisa/Seoul date +%m%d)
           echo "IMAGE_TAG=${IMAGE_TAG}"
 
           echo "########## 이미지 빌드################"
