@@ -14,7 +14,7 @@ pipeline {
           echo "IMAGE_TAG=${IMAGE_TAG}"
 
           echo "########## 이미지 빌드################"
-          docker build -t jieun3113/ktcloudinfra:${IMAGE_TAG} .
+          docker build -t jieun3113/ktcloudinfra4:${IMAGE_TAG} .
 
 
 
